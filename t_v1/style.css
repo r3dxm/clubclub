@@ -1,0 +1,211 @@
+:root {
+    --primary: #835858;
+    --background: #FFF0F0;    
+    --color_dark: #463333;
+    --color_light: #EBD4D4;
+    
+    --smoother: #f1f1f1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+.btn {
+    background: var(--color_dark);
+    border: none;
+    color: var(--color_light);
+    border-radius: 3px;
+    padding: 5px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* _____scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    padding: initial 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4em ;
+    -webkit-border-radius: 4em ;
+    -moz-border-radius: 4em ;
+    -ms-border-radius: 4em ;
+    -o-border-radius: 4em ;
+}
+/* ___end of scroll bar */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+header {
+    padding: 10px  30px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: var(--background);
+    z-index: 100;
+    top: 0;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+}
+.logo img {
+    width: 50px;
+}
+header a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+.avatar img {
+    border-radius: 4em;
+    border: 3px solid var(--primary);
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    -ms-border-radius: 4em;
+    -o-border-radius: 4em;
+}
+
+/* END OF HEADER */
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 20px 0;
+}
+
+footer .link_box {
+    margin: 10px 0;
+    text-align: center;
+}
+footer .link_box a {
+    text-decoration: none;
+    color: var(--primary);
+    margin:  10px;
+    font-weight: 600;
+}
+footer p {
+    color: var(--primary);
+
+}
+/* END OF FOOTER */
+body {
+    background-color: var(--background);
+}
+
+
+.search, .clubs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+.search__box {
+    width: 500px;
+}
+
+/* SEARCH BAR */
+.search__main form {
+    display: flex;
+    justify-content: center;
+}
+.search__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px  ;
+    outline: none;
+    border: none;
+    background-color: var(--color_light);
+    color: var(--color_dark);
+    font-weight: 600;
+}
+.search__input::placeholder {
+    color: var(--primary);
+    font-weight: 600;
+}
+/* SEARCH BAR END */
+
+/* HOME CLUBS */
+.clubs_list{
+    margin: 20px 0;
+    width: 500px;
+}
+.club__box {
+    width: 100%;
+    background-color: var(--color_light);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.club__box .club__box__name {
+    color: var(--color_dark);
+    font-weight: 900;
+}
+.club__box .club__box__info {
+    padding: 10px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.club__box .club__box__info .club__box__persional {
+    display: block;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 4em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    -ms-border-radius: 4em;
+    -o-border-radius: 4em;
+}
+.club__box .club__join__request {
+    padding: 5px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.club__join__request__btn {
+    cursor: pointer;
+}
