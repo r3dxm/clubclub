@@ -1,0 +1,32 @@
+:root {
+    --mainbackground: #e0d6c3;
+    --cardbackground: #B4977B;
+    --fontcolor: #563A3D;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: var(--mainbackground);
+    color: var(--fontcolor);
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    background-color: var(--cardbackground);
+    height: auto;
+    width: 70vw;
+    border-radius: 25px;
+}

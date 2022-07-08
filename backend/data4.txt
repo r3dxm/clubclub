@@ -1,0 +1,34 @@
+ user:
+	- username
+	- email
+	- password
+	- location
+	- friends
+	- clubs
+	- user id
+
+clubs:
+	- name
+	- members
+	- chat history:
+		- messages:
+			- sent time and date
+			- sent by
+		- polls:
+			- vote results
+		- calender:
+			- meetup date and time
+	- club id
+
+
+api:
+	- login
+	- register
+	- get all clubs
+	- get all clubs by user
+	- get chat history
+	- get user
+	- create club
+	- create poll
+	- set meetup date and time
+	- get user profile

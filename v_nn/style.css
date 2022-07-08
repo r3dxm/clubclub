@@ -1,0 +1,149 @@
+:root {
+    --main_background: #e0d6c3;
+    --cardbackground: #B4977B;
+    --text_color: #563A3D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: var(--main_background);
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90%;
+    min-width: 420px;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__search__container {
+    background-color: var(--cardbackground);
+    width: 90%;
+    margin: 20px;
+    border-radius:  5px;
+    display: flex;
+    justify-content: center;
+}
+.main__search__container input {
+    display: block;
+    margin: 20px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+
+.main__card__container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__card__container .main__card {
+    background: var(--cardbackground);
+
+    width: 80%;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.main__card__container .main__card h3 {
+    font-size: 2em;
+    margin: 10px ;
+    color: var(--text_color);
+}
+
+.main__card__container .main__card .main__club__ducks {
+    margin:  10px;
+}
+
+.main__card__container .main__card .main__club__ducks img {
+    width: 50px;
+    border-radius: 40em;
+    object-fit: contain;
+    margin: 5px;
+    border: 5px solid #000;
+}
+
+.main__header__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+}
+
+.header__top, .header__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__card__container__profile {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__card__container__profile .main__card__profile {
+    background: var(--cardbackground);
+
+    width: 47%;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+
+.main__card__container__profile .main__card__profile h3 {
+    font-size: 2em;
+    margin: 10px ;
+    color: var(--text_color);
+}
+
+.main__card__container__profile .main__card__profile .main__club__ducks {
+    margin:  10px;
+}
+
+.main__card__container__profile .main__card__profile .main__club__ducks img {
+    width: 50px;
+    border-radius: 40em;
+    object-fit: contain;
+    margin: 5px;
+    border: 5px solid #000;
+}
+
+.main__card__container__profile .main__card__profile button {
+    background-color: var(--cardbackground);
+    color: var(--text_color);
+    border-radius: 10px;
+    height: 70%;
+    width: 100%;
+}
