@@ -1,5 +1,8 @@
 <template>
     <section class = "container main">
+
+        <Navbar></Navbar>
+
         <div class="main__header__container">
             <div class="header__top">
                 <h3>A person</h3>
@@ -15,19 +18,25 @@
 
         <Search></Search>
 
-        <Profileclubcard v-for = "item in 10" :key = "item"></Profileclubcard>
+        <Clubcard v-for = "item in 10" :key = "item"></Clubcard>
+
+        <Footer></Footer>
     </section>
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
 import Search from '../components/Search.vue'
-import Profileclubcard from '../components/Profileclubcard.vue'
+import Clubcard from '../components/Clubcard.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
     name: 'Privateprofile',
     components: {
+        Navbar,
         Search,
-        Profileclubcard
+        Clubcard,
+        Footer
     }
 }
 </script>
@@ -37,6 +46,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .main__header__container {
