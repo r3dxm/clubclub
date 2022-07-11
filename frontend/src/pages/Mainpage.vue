@@ -1,19 +1,25 @@
 <template>
   <section class="container main">
-        <Search></Search>
-        <Mainclubcard v-for = "item in items" :key = "item" :item = "item"></Mainclubcard>
+      <Navbar></Navbar>
+      <Search></Search>
+      <Clubcard v-for = "item in items" :key = "item" :item = "item"></Clubcard>
+      <Footer></Footer>
     </section>
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
 import Search from '../components/Search.vue'
-import Mainclubcard from '../components/Mainclubcard.vue'
+import Clubcard from '../components/Clubcard.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: 'Mainpage',
   components: {
+    Navbar,
     Search,
-    Mainclubcard
+    Clubcard,
+    Footer
   },
   data() {
     return {

@@ -1,6 +1,10 @@
 <template>
-    <div class="main__search__container">
-        <input type="text">
+    <div class="search">
+        <div class="search__box">
+            <form>
+                <input class="search__input" type="text" placeholder="filter clubs" />
+            </form>
+        </div>
     </div>
 </template>
 
@@ -12,24 +16,23 @@ export default {
 
 
 <style scoped>
-
-.main__search__container {
-    background-color: var(--cardbackground);
-    width: 90%;
-    margin: 20px;
-    border-radius:  5px;
+.search__main form {
     display: flex;
     justify-content: center;
 }
-.main__search__container input {
-    display: block;
-    margin: 20px;
-    width: 90%;
-    height: 30px;
-    border-radius: 5px;
+.search__input {
+    width: 72vw;
+    padding: 10px;
+    border-radius: 3px  ;
+    outline: none;
     border: none;
-    background-color: white;
-    font-size: 1.2em;
-    text-align: center;
- }
+    margin-top: 30px;
+    background-color: var(--color_light);
+    color: var(--color_dark);
+    font-weight: 600;
+}
+.search__input::placeholder {
+    color: var(--primary);
+    font-weight: 600;
+}
 </style>
