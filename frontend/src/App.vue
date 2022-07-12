@@ -1,14 +1,14 @@
 <template>
-  <Mainpage></Mainpage>
+  <Login></Login>
 </template>
 
 <script>
-import Mainpage from './pages/Mainpage.vue'
+import Login from './pages/Login.vue'
 
 export default {
   name: 'App',
   components: {
-    Mainpage
+    Login
   }
 }
 </script>
@@ -34,7 +34,7 @@ export default {
 }
 
 body {
-    background: var(--main_background);
+    background: var(--background);
 
 }
 

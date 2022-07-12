@@ -2,9 +2,11 @@
     <section class = "main container">
         <div class="main__card">
             <input type="text" placeholder = "Username">
+            <input type = "email" placeholder = "email">
             <input type="password" placeholder = "Password">
-            <button>Login</button>
-            <button>Sign up</button>
+            <input type = "password" placeholder = "Confirm password">
+            <button>Create account</button>
+            <button>I already have an account</button>
             <Footer></Footer>
         </div>
     </section>
@@ -34,7 +36,7 @@ export default {
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 60%;
+    height: 70%;
     box-shadow: 0 4px 8px 0 black;
     transition: 0.3s;
     background-color: var(--color_light);
